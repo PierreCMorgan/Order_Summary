@@ -15,15 +15,49 @@
     <title>Frontend Mentor | Order Summary Card</title>
   </head>
   <body>
-    Order Summary You can now listen to millions of songs, audiobooks, and
-    podcasts on any device anywhere you like! Annual Plan $59.99/year Change
-    Proceed to Payment Cancel Order
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">PierreCMorgan</a>.
+    <div role="main" class="container display-middle">
+      <div class="pcm-card">
+        <div role="image" class="head-img">
+          <img src="./images/illustration-hero.svg" alt="hero image" />
+        </div>
+        <div class="text">
+          <div role="heading" class="heading">
+            <h1>Order Summary</h1>
+          </div>
+          <div role="contentinfo" class="description">
+            <p>
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+          </div>
+          <div class="sub-container row">
+            <div class="img col-1">
+              <img src="./images/icon-music.svg" alt="" />
+            </div>
+            <div class="plan col-2">
+              <div class="desc">
+                <h2>Annual Plan</h2>
+              </div>
+              <div class="price">
+                <p>$59.99/year</p>
+              </div>
+            </div>
+            <div class="link col-2">
+              <a href="">Change </a>
+            </div>
+          </div>
+        </div>
+        <input type="button" class="btn" value="Proceed to Payment" />
+        <div class="cancel">
+          <a href="">Cancel Order</a>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">PierreCMorgan</a>.
+      </div>
     </div>
   </body>
 </html>

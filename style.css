@@ -4,10 +4,47 @@
   --verypaleblue: hsl(225, 100%, 98%);
   --desatblue: hsl(224, 23%, 55%);
   --darkblue: hsl(223, 47%, 23%);
+  --shadow1: hsla(223, 47%, 23%, 0.16);
+  --shadow2: hsla(223, 47%, 23%, 0.12);
 }
-
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/*Mobile first design*/
+[class*="col"] {
+  float: left;
+  padding: 15px;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 body {
-  font-family: "Red Hat Display";
+  font-family: "Red Hat Display", sans-serif;
+}
+h1 {
+  font-weight: 900;
+  font-size: 1.45em;
+}
+h2 {
+  font-weight: 700;
+  font-size: 1.05em;
+}
+p {
+  font-weight: 500;
+  font-size: 1em;
+}
+.container {
+  max-width: 375px;
+  height: auto;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.head-img > img {
+  background-clip: content-box;
+  width: 100%;
 }
 .display-middle {
   position: absolute;
@@ -16,15 +53,27 @@ body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-.pcm-card,
-.pcm-card-2 {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+.pcm-card {
+  border-radius: 2em;
+  box-shadow: 0 2px 5px 0 var(--shadow1), 0 2px 10px 0 var(--shadow2);
 }
-.pcm-card-4,
-.pcm-hover-shadow:hover {
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+.text {
+  padding: 15px;
+}
+.col-1 {
+  width: 16.66666%;
+}
+.col-2 {
+  width: 41.66667%;
+}
+.sub-container {
+  padding: 5px;
+  background-color: var(--verypaleblue);
+  border-radius: 15px;
 }
 .attribution {
+  top: 200px;
+  position: relative;
   font-size: 11px;
   text-align: center;
 }
