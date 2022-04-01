@@ -24,7 +24,7 @@ body {
   background-image: url(/images/pattern-background-desktop.svg);
   background-color: var(--verypaleblue);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 h1 {
   font-weight: 900;
