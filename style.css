@@ -8,7 +8,7 @@
   --shadow2: hsla(223, 47%, 23%, 0.12);
 }
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
-/*Mobile first design*/
+
 [class*="col"] {
   float: left;
   padding: 15px;
@@ -24,7 +24,8 @@ body {
   background-image: url(/images/pattern-background-desktop.svg);
   background-color: var(--verypaleblue);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-position: center top;
+  background-size: 100vw;
 }
 h1 {
   font-weight: 900;
@@ -171,4 +172,13 @@ p {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 385px) {
+  body {
+    background-image: url(/images/pattern-background-mobile.svg);
+  }
+  .pcm-card {
+    width: 85%;
+    height: auto;
+  }
 }
